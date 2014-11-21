@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+
+require('../fisb.js').cli.run( process.argv );
