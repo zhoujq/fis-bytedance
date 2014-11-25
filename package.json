@@ -18,6 +18,7 @@
   "license": "BSD",
   "dependencies": {
     "fis": "^1.8.5",
+    "fis-lint-jshint": "0.0.9",
     "fis-parser-less": "^0.1.1",
     "fis-parser-sass": "^0.2.1",
     "fis-parser-utc": "0.0.2",
