@@ -60,7 +60,7 @@ $ fisrcv 8999
 fis.config.merge({
     deploy: {
         dev: {
-            receiver: 'http://<host>:8999',
+            receiver: 'http://<host>:8999/receiver',
             from: '/template',
             //远端目录
             to: '/home/template/'
