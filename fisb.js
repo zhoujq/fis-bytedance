@@ -17,9 +17,7 @@ fis.config.merge({
             //utc：underscore自带模板语言
             tmpl: 'utc',
             //css方言
-            less: 'less',
-            scss: 'sass',
-            sass: 'sass'
+            less: 'less'
         },
         postprocessor : {
             js : 'jswrapper, require-async'
@@ -106,9 +104,7 @@ fis.config.merge({
     roadmap : {
         ext : {
             //输出为css文件
-            less : 'css',
-            scss: 'css',
-            sass: 'css'
+            less : 'css'
         },
         path : [{
                 //前端模板
@@ -117,10 +113,10 @@ fis.config.merge({
                 isJsLike : true,
                 release : false
             }, {
-                reg : /(\/_.*|\.inline\.less|\.inline\.scss|\.inline\.sass|readme.txt|build\..*)$/,
+                reg : /(\/_.*|\.inline\.less|readme.txt|build\..*)$/,
                 release : false
             }, {
-                reg : /^\/(pagelet|common|static)\/.*\.(less|css|sass|scss)$/,
+                reg : /^\/(pagelet|common|static)\/.*\.(less|css)$/,
                 useSprite : true,
                 release: '${statics}/${projectname}/$&'
             }, {
@@ -131,7 +127,7 @@ fis.config.merge({
                 reg : /^\/(pagelet|page)\/(.*)\.html$/,
                 release : '${templates}/${projectname}/$&'
             }, {
-                reg : /^\/(pagelet|common|static)\/.*\.(less|css|sass|scss)$/,
+                reg : /^\/(pagelet|common|static)\/.*\.(less|css)$/,
                 useSprite : true,
                 release: '${statics}/${projectname}/$&'
             }, {
