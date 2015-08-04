@@ -1,6 +1,6 @@
 {
   "name": "fis-bytedance",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "bytedance fe build",
   "bin": {
     "fisb": "bin/fisb"
@@ -17,9 +17,9 @@
   "author": "bytedancefe",
   "license": "BSD",
   "dependencies": {
-    "fis": "^1.8.5",
+    "fis": "^1.9.31",
     "fis-lint-jshint": "0.0.9",
-    "fis-parser-less": "^0.1.1",
+    "fis-parser-less": "^0.1.3",
     "fis-parser-utc": "0.0.2",
     "fis-postpackager-autoload": "0.0.13",
     "fis-postpackager-simple": "0.0.23",
