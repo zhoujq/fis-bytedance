@@ -10,14 +10,12 @@ fis.config.merge({
     modules : {
         // 自动css sprites插件
         spriter: 'csssprites',
-        lint: {
-            js: 'jshint'
-        },
         parser : {
             //utc：underscore自带模板语言
             tmpl: 'utc',
             //css方言
-            less: 'less'
+            less: 'less',
+            es6: 'babel'
         },
         postprocessor : {
             js : 'jswrapper, require-async'
@@ -55,56 +53,13 @@ fis.config.merge({
             csssprites: {
                 margin: 30
             }
-        },
-        lint: {
-            jshint: {
-                undef: true,
-                unused: 'vars',
-                curly: true,
-                eqeqeq: true,
-                forin: false,
-                latedef: 'nofunc',
-                newcap: false,
-                noarg: true,
-                nonew: true,
-                trailing: true,
-                maxparams: 4,
-                maxdepth: 4,
-                maxlen: 100,
-                maxstatements: 25,
-                boss: true,
-                expr: true,
-                laxcomma: true,
-                laxbreak: true,
-                sub: true,
-                lastsemic: true,
-                eqnull: true,
-                multistr: false,
-                browser: true,
-                jquery: true,
-                node: true,
-                maxerr: 10,
-                ignored: [
-                    'static/**.js',
-                    /\.tmpl$/i
-                ],
-                globals: {
-                    '_': false,
-                    'require': false,
-                    '__inline': false,
-                    '__uri': false,
-                    'listener': false,
-                    'module': false,
-                    'Pagelet': false,
-                    'define': false
-                }
-            }
         }
     },
     roadmap : {
         ext : {
             //输出为css文件
-            less : 'css'
+            less : 'css',
+            es6: 'js'
         },
         path : [{
                 //前端模板
